@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gentle Men Hair Saloon</title>
+<meta name="description" content="Gentle Men Hair Saloon. Haircut, beard aur shave. WhatsApp par booking karein.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" type="image/png" href="./assets/img/favicon.png">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200Zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.3-.4.300-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.300.6.500-.1 1.600-.7 1.800-1.300.2-.6.200-1.200.2-1.300-.1-.1-.3-.2-.5-.3Z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.200" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.200" cy="6.800" r="1.300" fill="currentColor"/></symbol>
+</svg>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand">Gentle <span>Men</span> Hair Saloon</div>
+    <a class="btn" data-wa href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp par booking</a>
+  </header>
+  <div class="pole" role="presentation"></div>
+
+  <div class="hero">
+    <div>
+      <h1>Sharp cut. <em>Clean</em> shave. Seedha booking.</h1>
+      <p>Apne mohalle ki barber shop. Haircut, beard aur shave, aaram se. Booking ke liye bas WhatsApp par message kijiye, line mein lagne ki zaroorat nahi.</p>
+      <div class="cta">
+        <a class="btn" href="#book">Abhi book karein</a>
+        <a class="btn alt" href="#services">Rates dekhein</a>
+      </div>
+    </div>
+    <aside class="hours">
+      <h3>Shop timing</h3>
+      <dl>
+        <dt>Peer se Jumeraat</dt><dd>11:00 AM – 10:00 PM</dd>
+        <dt>Jumma</dt><dd>2:30 PM – 10:00 PM</dd>
+        <dt>Itwaar</dt><dd>12:00 PM – 9:00 PM</dd>
+      </dl>
+    </aside>
+  </div>
+
+  <section id="services">
+    <h2>Services aur rates</h2>
+    <p class="sub">Rates rupees (PKR) mein hain.</p>
+    <ul class="menu">
+      <li><span class="name">Haircut</span><span class="dots"></span><span class="price">Rs. 400</span></li>
+      <li><span class="name">Beard trim</span><span class="dots"></span><span class="price">Rs. 200</span></li>
+      <li><span><span class="name">Haircut + Beard</span><br><span class="note">Sab se zyada liya jane wala</span></span><span class="dots"></span><span class="price">Rs. 550</span></li>
+      <li><span class="name">Clean shave</span><span class="dots"></span><span class="price">Rs. 250</span></li>
+      <li><span class="name">Hair wash aur style</span><span class="dots"></span><span class="price">Rs. 200</span></li>
+      <li><span class="name">Bachon ka haircut</span><span class="dots"></span><span class="price">Rs. 300</span></li>
+    </ul>
+  </section>
+
+  <section id="book">
+    <h2>WhatsApp par booking</h2>
+    <p class="sub">Form bharein, button dabayein, aur aapka message shop ke WhatsApp par khul jayega.</p>
+    <div class="book">
+      <form id="bf" novalidate>
+        <label for="nm">Aapka naam
+          <input id="nm" type="text" autocomplete="name" placeholder="Misaal: Ali Raza">
+        </label>
+        <label for="sv">Service
+          <select id="sv">
+            <option>Haircut</option>
+            <option>Beard trim</option>
+            <option>Haircut + Beard</option>
+            <option>Clean shave</option>
+            <option>Hair wash aur style</option>
+            <option>Bachon ka haircut</option>
+          </select>
+        </label>
+        <div class="row2">
+          <label for="dt">Tareekh
+            <input id="dt" type="date">
+          </label>
+          <label for="tm">Waqt
+            <select id="tm">
+              <option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option>
+              <option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option>
+              <option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option>
+            </select>
+          </label>
+        </div>
+        <p class="hint" id="hint" role="status"></p>
+        <a class="btn" id="send" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp par bhejein</a>
+      </form>
+      <ol class="steps">
+        <li><strong>Form bharein.</strong> Naam, service, tareekh aur waqt chunein.</li>
+        <li><strong>Button dabayein.</strong> WhatsApp khulega aur message pehle se likha hoga.</li>
+        <li><strong>Send karein.</strong> Shop se confirmation ka jawab aa jayega.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="follow">
+    <h2>Hamein follow karein</h2>
+    <p class="sub">Naye styles, kaam ki videos aur offers yahan dekhein.</p>
+    <div class="social">
+      <a class="wa" data-wa href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span>WhatsApp<br><small data-phone-text></small></span></a>
+      <a class="ig" data-ig href="#" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg><span>Instagram<br><small data-ig-text></small></span></a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="pole" role="presentation"></div>
+    <p>Gentle Men Hair Saloon · Hyderabad, Sindh Latifabad No 10 Near Makkah Jamah Masjid & Hanif Ata Chuki</p>
+  </footer>
+</div>
+
+<a class="fab" data-wa href="#" target="_blank" rel="noopener" aria-label="WhatsApp par booking"><svg><use href="#i-wa"/></svg></a>
+
+<script src="./script.js"></script>
+</body>
+</html>

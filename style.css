@@ -1,0 +1,550 @@
+
+/* ==============================
+   GENTLE MEN HAIR SALOON
+   PREMIUM BLACK & GOLD THEME
+============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap');
+
+:root {
+    --gold: #d6a84f;
+    --gold-light: #f4d58b;
+    --dark: #0b0b0b;
+    --card: #151515;
+    --text: #f5f5f5;
+    --muted: #a5a5a5;
+    --border: rgba(214,168,79,0.22);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--dark);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* MAIN WRAPPER */
+
+.wrap {
+    width: min(1150px, 92%);
+    margin: auto;
+}
+
+/* HEADER */
+
+.top {
+    min-height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.brand {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.brand span {
+    color: var(--gold);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 24px;
+    background: linear-gradient(135deg, var(--gold), #a87924);
+    color: #111;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 6px;
+    border: 1px solid var(--gold);
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.btn svg {
+    width: 21px;
+    height: 21px;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    background: var(--gold-light);
+    box-shadow: 0 8px 25px rgba(214,168,79,.25);
+}
+
+.btn.alt {
+    background: transparent;
+    color: var(--gold);
+}
+
+.btn.alt:hover {
+    background: var(--gold);
+    color: #111;
+}
+
+/* BARBER POLE */
+
+.pole {
+    height: 5px;
+    margin: 0;
+    background: repeating-linear-gradient(
+        135deg,
+        #d6a84f 0px,
+        #d6a84f 12px,
+        #fff 12px,
+        #fff 24px,
+        #b52c2c 24px,
+        #b52c2c 36px
+    );
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 490px;
+    padding: 90px 0;
+    display: grid;
+    grid-template-columns: 1.5fr .8fr;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+}
+
+.hero h1 {
+    max-width: 700px;
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(43px, 6vw, 76px);
+    line-height: 1.15;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero h1 em {
+    color: var(--gold);
+    font-style: normal;
+}
+
+.hero p {
+    color: var(--muted);
+    max-width: 620px;
+    margin: 25px 0 30px;
+    font-size: 16px;
+}
+
+.cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* SHOP TIMING */
+
+.hours {
+    background: linear-gradient(145deg, #1c1c1c, #101010);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 15px 45px rgba(0,0,0,.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.hours::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: var(--gold);
+    left: 0;
+    top: 0;
+}
+
+.hours h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
+    color: var(--gold);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hours dl {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+}
+
+.hours dt {
+    color: var(--gold-light);
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.hours dd {
+    color: var(--muted);
+    border-bottom: 1px solid #292929;
+    padding-bottom: 10px;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 75px 0;
+    border-top: 1px solid #252525;
+}
+
+section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(32px, 4vw, 45px);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background: var(--gold);
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.sub {
+    color: var(--muted);
+    margin: 15px 0 30px;
+}
+
+/* SERVICES */
+
+.menu {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 22px;
+    background: var(--card);
+    border: 1px solid #292929;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+
+.menu li:hover {
+    border-color: var(--gold);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(214,168,79,.08);
+}
+
+.name {
+    font-weight: 700;
+    color: var(--text);
+}
+
+.dots {
+    flex: 1;
+    border-bottom: 2px dotted #555;
+    min-width: 15px;
+}
+
+.price {
+    color: var(--gold);
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.note {
+    color: var(--gold);
+    font-size: 11px;
+}
+
+/* BOOKING SECTION */
+
+.book {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 40px;
+    padding: 35px;
+    background: linear-gradient(145deg, #1a1a1a, #101010);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+#bf {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#bf label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--gold-light);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#bf input,
+#bf select {
+    width: 100%;
+    padding: 14px;
+    background: #090909;
+    border: 1px solid #383838;
+    color: white;
+    border-radius: 6px;
+    font-family: inherit;
+    outline: none;
+    transition: .3s;
+    color-scheme: dark;
+}
+
+#bf input:focus,
+#bf select:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(214,168,79,.12);
+}
+
+#bf input::placeholder {
+    color: #777;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.hint {
+    color: var(--gold);
+    font-size: 13px;
+}
+
+#send {
+    width: 100%;
+}
+
+/* BOOKING STEPS */
+
+.steps {
+    padding: 15px 0 15px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    color: var(--muted);
+}
+
+.steps li {
+    padding-left: 8px;
+}
+
+.steps li::marker {
+    color: var(--gold);
+    font-weight: 800;
+}
+
+.steps strong {
+    display: block;
+    color: var(--gold-light);
+    margin-bottom: 5px;
+}
+
+/* SOCIAL MEDIA */
+
+.social {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social a {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px;
+    background: var(--card);
+    border: 1px solid #303030;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.social a:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+}
+
+.social svg {
+    width: 35px;
+    height: 35px;
+}
+
+.social .wa svg {
+    color: #25D366;
+}
+
+.social .ig svg {
+    color: #e66b9a;
+}
+
+.social small {
+    color: var(--muted);
+    font-weight: 400;
+    word-break: break-word;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 30px 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 16px;
+}
+
+footer .pole {
+    margin-bottom: 25px;
+    
+}
+
+/* FLOATING WHATSAPP */
+
+.fab {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 5px 25px rgba(37,211,102,.35);
+    z-index: 100;
+    transition: .3s;
+}
+
+.fab:hover {
+    transform: scale(1.12);
+}
+
+.fab svg {
+    width: 32px;
+    height: 32px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 800px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 65px 0;
+    }
+
+    .hours {
+        max-width: 100%;
+    }
+
+    .book {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .top {
+        flex-direction: column;
+        padding: 22px 0;
+        text-align: center;
+    }
+
+    .brand {
+        font-size: 25px;
+    }
+
+    .top .btn {
+        width: 100%;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .cta {
+        flex-direction: column;
+    }
+
+    .cta .btn {
+        width: 100%;
+    }
+
+    section {
+        padding: 55px 0;
+    }
+
+    .menu li {
+        padding: 16px 12px;
+        gap: 8px;
+        font-size: 13px;
+    }
+
+    .book {
+        padding: 20px 15px;
+    }
+
+    .row2 {
+        grid-template-columns: 1fr;
+    }
+
+    .social {
+        flex-direction: column;
+    }
+
+    .fab {
+        width: 54px;
+        height: 54px;
+        right: 15px;
+        bottom: 15px;
+    }
+}
